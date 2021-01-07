@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "./hashtag.png";
 import "./App.css";
+import ThreeScene from "./components/ThreeScene.jsx";
 
 const NUMBER_OF_HASHTAGS = 30;
 
@@ -37,9 +38,8 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
+      <ThreeScene />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-
         <div>
           {FILTERS.map(filter => (
             <span key={filter} style={{ marginRight: "20px" }}>
