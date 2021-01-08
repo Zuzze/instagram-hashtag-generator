@@ -1,4 +1,8 @@
-export const HASHTAGS = {
+interface Category {
+  [key: string]: string[];
+}
+
+export const HASHTAGS: Category = {
   app: [
     "#appdesign",
     "#appdevelopment",
@@ -84,7 +88,7 @@ export const HASHTAGS = {
     "#icons8",
     "#uidailyworks",
     "#pixel",
-    "designfeed",
+    "#designfeed",
     "#uxllusion",
     "#uxdesigndaily",
     "#dribbblers",
@@ -99,7 +103,7 @@ export const HASHTAGS = {
   flat: ["#flatdesigndaily", "#flatdesigninspiration"]
 };
 
-export const USERS = {
+export const USERS: Category = {
   design: [
     "@uisquirrel",
     "@ui_ux_idea",
@@ -136,7 +140,8 @@ export const USERS = {
     "@designquokka",
     "@uxlean",
     "@_designbakery",
-    "@appliedcreatives"
+    "@appliedcreatives",
+    "@wedesignex"
   ],
   logo: [
     "@logobucket",
