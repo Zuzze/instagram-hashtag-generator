@@ -1,10 +1,101 @@
 export const HASHTAGS = {
-  app: [],
-  web: [],
-  logo: [],
-  graphics: [],
-  "3d": [],
-  design: ["#designbymonday", "#designbymonday", "uiuxsupply"],
+  app: [
+    "#appdesign",
+    "#appdevelopment",
+    "#mobileappdesign",
+    "#development",
+    "#appbrainy",
+    "#uixshow"
+  ],
+  web: [
+    "#webdesign",
+    "#websitebrainy",
+    "#softwaredevelopment",
+    "#html",
+    "#css",
+    "#development",
+    "#webdevelopers",
+    "#javascript",
+    "#100daysofcode",
+    "#webdesigners",
+    "#webdesignerlife",
+    "#responsivewebdesign",
+    "#webdesignideas",
+    "#dailywebdesign",
+    "#welovewebdesign",
+    "#frontenddeveloper",
+    "#webdesigntrends"
+  ],
+  logo: [
+    "#logoinspiration",
+    "#logodesign",
+    "#branddesign",
+    "#graphicdesign",
+    "#logohexa",
+    "#logodesignersclub",
+    "#logobrainy"
+  ],
+  "3d": [
+    "#3dmodellers",
+    "#3d_animation_design",
+    "#blenderlounge",
+    "#blendernation",
+    "#blendercentral",
+    "#blendershare"
+  ],
+  design: [
+    "#uidesign",
+    "#uidesigners",
+    "#designbymonday",
+    "#uiuxsupply",
+    "#uidesignpatterns",
+    "#uxdesignmastery",
+    "#uxengineer",
+    "#uiux",
+    "#ui_ux_idea",
+    "#uidevelopment",
+    "#landingpage",
+    "#dailyui",
+    "#uidesign",
+    "#dribbble",
+    "#designer",
+    "#designtools",
+    "#behance",
+    "#designchallenge",
+    "#uiuxdesign",
+    "#uidesignpatterns",
+    "#designcake",
+    "#userexperience",
+    "#interactiondesign",
+    "#responsivedesign",
+    "#uiinspiration",
+    "#uitrends",
+    "#dailyuix",
+    "#creative",
+    "#uxtrends",
+    "#uisociety",
+    "#designweb",
+    "#uisquirrel",
+    "#uiuxpixel",
+    "#uxigers",
+    "#graphicdesign",
+    "#dopely",
+    "#ui8",
+    "#icons8",
+    "#uidailyworks",
+    "#pixel",
+    "designfeed",
+    "#uxllusion",
+    "#uxdesigndaily",
+    "#dribbblers",
+    "#interfacehub",
+    "#uiuxlabz"
+  ],
+  illustration: [
+    "#illustration_the_best",
+    "#dailyinspiration",
+    "#illustrationbrainy"
+  ],
   flat: ["#flatdesigndaily", "#flatdesigninspiration"]
 };
 
@@ -23,6 +114,7 @@ export const USERS = {
     "@ui.interceptor",
     "@delightful.ui",
     "@ux_trends",
+    "@uxigers",
     "@dribbblepro",
     "@ui.designs",
     "@ronasit_ui",
@@ -39,24 +131,59 @@ export const USERS = {
     "@ui.dose",
     "@uiuxdailydesign",
     "@uiuxsupply",
-    "@uiuxbkr"
+    "@uiuxbkr",
+    "@uidesignpatterns",
+    "@designquokka",
+    "@uxlean",
+    "@_designbakery",
+    "@appliedcreatives"
   ],
-  logo: ["@logobucket", "@icons8", "@logohexa"],
+  logo: [
+    "@logobucket",
+    "@icons8",
+    "@logohexa",
+    "@logobrainy",
+    "@logobucket",
+    "@logoideas_"
+  ],
   app: [
     "@juicyappdesign",
     "@dopelydesign",
     "@uixglow",
     "@uisource",
-    "@ui.design",
-    "@_designbakery",
-    "@ui.interceptor"
+    "@ui.interceptor",
+    "@uiuxmobile"
   ],
-  web: ["@websitebrainy", "@webkraftr_", "@webdeveloperibs", "@webdesign.clan"],
+  web: [
+    "@websitebrainy",
+    "@webkraftr_",
+    "@webdeveloperibs",
+    "@webdesign.clan",
+    "@welovewebdesign",
+    "@uixglowweb",
+    "@juice.insp"
+  ],
   flat: [
     "@_flatdesign",
     "@flatdesigndaily",
     "@flatdesignspiration",
     "@flatdesign.trend"
   ],
-  "3d": []
+  illustrations: [
+    "@illustrationbrainy⁠",
+    "@daily.illustrations",
+    "@weloveillustration",
+    "@illustration_the_best",
+    "@illustration_daily"
+  ],
+  "3d": [
+    "@3d.mob⁠",
+    "@3d.modellers",
+    "@3danimationdesign",
+    "@3dblendered",
+    "@blenderlounge",
+    "@blendernation",
+    "@blendercentral",
+    "@blender.share"
+  ]
 };

@@ -3,27 +3,32 @@ import * as THREE from "three";
 import { MTLLoader, OBJLoader } from "three-obj-mtl-loader";
 import OrbitControls from "three-orbitcontrols";
 
+const _BACKGROUND = "#472a82";
+const _FOV_FRUSTUM = 75;
+const _NEAR_FRUSTUM = 0.1; // plane closer to the
+
 class ThreeScene extends Component {
   componentDidMount() {
-    const width = this.mount.clientWidth;
-    const height = this.mount.clientHeight;
+    // Create scene
+    const width = this.sceneRef.clientWidth;
+    const height = this.sceneRef.clientHeight;
     this.scene = new THREE.Scene();
 
-    //Add Renderer
+    // Add Renderer
     this.renderer = new THREE.WebGLRenderer({ antialias: true });
-    this.renderer.setClearColor("#263238");
+    this.renderer.setClearColor(_BACKGROUND);
     this.renderer.setSize(width, height);
-    this.mount.appendChild(this.renderer.domElement);
+    this.sceneRef.appendChild(this.renderer.domElement);
 
-    //add Camera
+    // Add Camera
     this.camera = new THREE.PerspectiveCamera(75, width / height, 0.1, 1000);
-    this.camera.position.z = 20;
-    this.camera.position.y = 5;
+    this.camera.position.z = 10;
+    this.camera.position.y = 2;
 
-    //Camera Controls
+    // Camera Controls
     const controls = new OrbitControls(this.camera, this.renderer.domElement);
 
-    //LIGHTS
+    // Lights
     var lights = [];
     lights[0] = new THREE.PointLight(0x304ffe, 1, 0);
     lights[1] = new THREE.PointLight(0xffffff, 1, 0);
@@ -35,11 +40,13 @@ class ThreeScene extends Component {
     this.scene.add(lights[1]);
     this.scene.add(lights[2]);
 
-    //Simple Box with WireFrame
+    // Add models to scene
     this.addModels();
 
+    // Render Scene
     this.renderScene();
-    //start animation
+
+    // Start animation
     this.start();
   }
 
@@ -101,9 +108,9 @@ class ThreeScene extends Component {
     });*/
   }
 
-  componentWillUnmount() {
+  componentWillUnsceneRef() {
     this.stop();
-    this.mount.removeChild(this.renderer.domElement);
+    this.sceneRef.removeChild(this.renderer.domElement);
   }
   start = () => {
     if (!this.frameId) {
@@ -130,8 +137,8 @@ class ThreeScene extends Component {
     return (
       <div
         style={{ width: "100vw", height: "50vh" }}
-        ref={mount => {
-          this.mount = mount;
+        ref={sceneRef => {
+          this.sceneRef = sceneRef;
         }}
       />
     );
