@@ -31,7 +31,7 @@ const App: React.FC = () => {
 
     for (let filter of filters) {
       tags = tags.concat(HASHTAGS[filter]);
-      users = tags.concat(USERS[filter]);
+      users = users.concat(USERS[filter]);
     }
     console.log("all", tags);
     console.log("user", users);
@@ -43,6 +43,7 @@ const App: React.FC = () => {
 
   function generateRandom(hashtags: Array<string>, users: Array<string>) {
     const generatedTags: Array<string> = [];
+    console.log("raw users", users);
     // hashtags
     while (
       generatedTags.length < NUMBER_OF_HASHTAGS &&
@@ -65,7 +66,7 @@ const App: React.FC = () => {
         generatedUsers.push(users[randomIndex]);
       }
     }
-    console.log(generatedTags);
+    console.log("USERS", generatedUsers);
     setText(generatedTags.join(" ") + " " + generatedUsers.join(" "));
   }
 

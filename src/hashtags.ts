@@ -45,7 +45,13 @@ export const HASHTAGS: Category = {
     "#blenderlounge",
     "#blendernation",
     "#blendercentral",
-    "#blendershare"
+    "#blendershare",
+    "#blenderartworks",
+    "#blender",
+    "#blendercycles",
+    "#3dart",
+    "#3dartists",
+    "#3dmax"
   ],
   design: [
     "#uidesign",
@@ -61,6 +67,7 @@ export const HASHTAGS: Category = {
     "#landingpage",
     "#dailyui",
     "#uidesign",
+    "#uielite",
     "#dribbble",
     "#designer",
     "#designtools",
@@ -174,12 +181,13 @@ export const USERS: Category = {
     "@flatdesignspiration",
     "@flatdesign.trend"
   ],
-  illustrations: [
+  illustration: [
     "@illustrationbrainy⁠",
     "@daily.illustrations",
     "@weloveillustration",
     "@illustration_the_best",
-    "@illustration_daily"
+    "@illustration_daily",
+    "@dopelyillustration"
   ],
   "3d": [
     "@3d.mob⁠",
@@ -189,6 +197,11 @@ export const USERS: Category = {
     "@blenderlounge",
     "@blendernation",
     "@blendercentral",
-    "@blender.share"
+    "@blender.share",
+    "@lowpolygang",
+    "@3d.mob",
+    "@blender.artworks"
   ]
 };
+
+// @3d.divas
