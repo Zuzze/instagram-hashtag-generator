@@ -129,7 +129,7 @@ const App: React.FC = () => {
           </p>
         </div>
         <p>Your description</p>
-        <textarea value={text} />
+        <textarea value={text} className="result" />
       </header>
       <main></main>
     </div>
