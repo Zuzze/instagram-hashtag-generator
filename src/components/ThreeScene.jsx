@@ -6,6 +6,7 @@ import OrbitControls from "three-orbitcontrols";
 const _BACKGROUND = "#472a82";
 const _FOV_FRUSTUM = 75;
 const _NEAR_FRUSTUM = 0.1; // plane closer to the
+const _CUBE_COLOR = "#FFFFFF";
 
 class ThreeScene extends Component {
   componentDidMount() {
@@ -54,7 +55,7 @@ class ThreeScene extends Component {
     // -----Step 1--------
     const geometry = new THREE.BoxGeometry(5, 5, 5);
     const material = new THREE.MeshBasicMaterial({
-      color: "#0F0"
+      color: _CUBE_COLOR
     });
     this.cube = new THREE.Mesh(geometry, material);
     this.scene.add(this.cube);
@@ -62,7 +63,7 @@ class ThreeScene extends Component {
     // -----Step 2--------
     //LOAD TEXTURE and on completion apply it on SPHERE
     new THREE.TextureLoader().load(
-      "https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "https://images.pexels.com/photos/1851415/pexels-photo-1851415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
       texture => {
         //Update Texture
         this.cube.material.map = texture;
