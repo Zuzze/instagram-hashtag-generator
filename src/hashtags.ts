@@ -51,7 +51,10 @@ export const HASHTAGS: Category = {
     "#blendercycles",
     "#3dart",
     "#3dartists",
-    "#3dmax"
+    "#3dmax",
+    "#blender3d",
+    "#blenderguru",
+    "#3d"
   ],
   design: [
     "#uidesign",
@@ -150,7 +153,10 @@ export const USERS: Category = {
     "@appliedcreatives",
     "@wedesignex",
     "@uicrib",
-    "@ui._.designs"
+    "@ui._.designs",
+    "@uxui.tip",
+    "@ui.ux.designn",
+    "@ux.insider"
   ],
   logo: [
     "@logobucket",
