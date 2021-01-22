@@ -156,7 +156,9 @@ export const USERS: Category = {
     "@ui._.designs",
     "@uxui.tip",
     "@ui.ux.designn",
-    "@ux.insider"
+    "@ux.insider",
+    "@uiuxmagic",
+    "@gr8.uiux"
   ],
   logo: [
     "@logobucket",
