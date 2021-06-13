@@ -3,7 +3,7 @@ import * as THREE from "three";
 import { MTLLoader, OBJLoader } from "three-obj-mtl-loader";
 import OrbitControls from "three-orbitcontrols";
 
-const _BACKGROUND = "#472a82";
+const _BACKGROUND = "#000111";
 const _FOV_FRUSTUM = 75;
 const _NEAR_FRUSTUM = 0.1; // plane closer to the
 const _CUBE_COLOR = "#FFFFFF";
@@ -63,7 +63,7 @@ class ThreeScene extends Component {
     // -----Step 2--------
     //LOAD TEXTURE and on completion apply it on SPHERE
     new THREE.TextureLoader().load(
-      "https://images.pexels.com/photos/1851415/pexels-photo-1851415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "https://miro.medium.com/max/1000/1*2N3usQ3sg_e3Cn2Y6efG8A.png",
       texture => {
         //Update Texture
         this.cube.material.map = texture;

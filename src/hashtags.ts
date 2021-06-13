@@ -54,7 +54,8 @@ export const HASHTAGS: Category = {
     "#3dmax",
     "#blender3d",
     "#blenderguru",
-    "#3d"
+    "#3d",
+    "#lowtopoly"
   ],
   design: [
     "#uidesign",
@@ -110,7 +111,8 @@ export const HASHTAGS: Category = {
     "#dailyinspiration",
     "#illustrationbrainy"
   ],
-  flat: ["#flatdesigndaily", "#flatdesigninspiration"]
+  flat: ["#flatdesigndaily", "#flatdesigninspiration"],
+
 };
 
 export const USERS: Category = {
@@ -210,7 +212,25 @@ export const USERS: Category = {
     "@blender.share",
     "@lowpolygang",
     "@3d.mob",
-    "@blender.artworks"
+    "@blender.artworks",
+
+  ],
+  tips: [
+    "@uxbucket",
+    "@uxcel.app",
+    "@ux_sphere",
+    "@uxbrainy",
+    "@ux_material",
+    "@ui.class",
+    "@uxconnect",
+    "@uiuxsupply",
+    "@uxdesignmag",
+    "@uxswipe",
+    "@uxdesignlearn",
+    "@ux.base",
+    "@uxdesigner.world",
+    "@uxdesignn",
+    "@uisquirrel"
   ]
 };
 

@@ -13,7 +13,8 @@ const FILTERS: Array<string> = [
   "illustration",
   "logo",
   "flat",
-  "3d"
+  "3d",
+  "tips"
 ];
 
 const App: React.FC = () => {
@@ -82,6 +83,11 @@ const App: React.FC = () => {
     console.log("filters", updatedFilters);
   }
 
+  function handleTaggedUserChange(count: string) {
+    setNumberOfTaggedUsers(Number(count))
+    generateHashtags(selectedFilters);
+  }
+
   return (
     <div className="App">
       <ThreeScene />
@@ -105,11 +111,12 @@ const App: React.FC = () => {
           <br />
           <input
             type="range"
+            value={numberOfTaggedUsers}
             min="0"
             max="30"
-            step="15"
+            step="5"
             list="steplist"
-            onChange={e => setNumberOfTaggedUsers(Number(e.target.value))}
+            onChange={(e) => handleTaggedUserChange(e.target.value)}
           />
           <datalist id="steplist">
             <option>0</option>
@@ -121,6 +128,7 @@ const App: React.FC = () => {
             <option>30</option>
           </datalist>
         </div>
+        <p>{numberOfTaggedUsers}</p>
         <br />
         <div>
           <p>
